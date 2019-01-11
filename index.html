@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Your ID Card!</title>
+
+  </head>
+
+  <body>
+  
+    <h1> Lets Create an ID card!</h1>
+    
+    <form>
+      
+      <p class = "inputs"><strong>First Name:</strong><br></p>
+      
+        <input type = "text" id="firstName" placeholder="First Name" required/><br> <!--Input first name-->
+      
+      <p class = "inputs"><strong>Last Name:</strong><br></p>
+      
+        <input type = "text" id="lastName" placeholder="Last Name" required/><br> <!--Input last name-->
+      
+      <p id = "old"><strong>Age:</strong><br></p>
+      
+        <input type = "text" id="age" placeholder="age"/><br> <!--Input age-->
+      
+      <p id = "number"><strong>Phone Number:</strong><br></p>
+      
+        <input type = "tel" id="phoneNumber" placeholder="Phone Number"/><br> <!--Input phone number-->
+      
+      <p id = "home"><strong>Address:</strong><br></p>
+      
+        <input type = "text" id="address" placeholder="Address" required/><br> <!--Input address-->
+        
+    </form>
+    
+      <button onclick = "idCard()" id = "button">Get ID Card</button><br> <!--Creates button-->
+
+    <div id="idCard">
+  
+      <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg" alt="A Head In A Circle">
+  
+        <p id="postFullName"></p>
+  
+        <p id="postAge"></p>
+  
+        <p id="postPhoneNumber"></p>
+
+        <p id="postAddress"></p>
+        
+    </div>
+    
+    <script src="script.js"> 
+    
+    </script>
+    
+  </body>
+
+</html>
